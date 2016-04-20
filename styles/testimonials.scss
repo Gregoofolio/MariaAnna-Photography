@@ -1,0 +1,97 @@
+// TESTIMONIALS section
+.testimonials{
+	padding: 140px 10px ;
+	@media screen and (max-width:768px){
+		padding: 60px 10px;
+	}
+
+	.section-title{
+		text-transform: none;
+	}
+
+	.title-separator{
+		width: 30px;
+	}
+
+	.slider-belt, .slider-units, .slider-controls{
+		position: relative;
+	}
+
+	.slider-belt{
+		width: 100%;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		@media screen and (max-width:550px){
+			height: 350px;
+		}
+
+		.slider-units{
+			width: 600px;
+			height: 150px;
+			text-align: center;
+			@media screen and (max-width:768px){
+				width: 98%;
+			}
+
+			.slider-unit{
+				position: absolute;
+				top:0;
+				right:0;
+				bottom:0;
+				left:0;
+				opacity:0;
+				transition: opacity 1s ease;
+				&.active{
+					opacity:1;
+				}
+			}
+		}
+	}
+
+	.slider-content{
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(0);
+		font-family: Ral-L, Helvetica, sans-serif;
+		color: $grey-l;
+
+		.quote{
+			font-size: 1.1rem;
+			line-height: 1.4em;
+			margin-top: 0;
+		}
+
+		.quote-author{
+			font-size: 1rem;
+			color: #a0a0a0;
+		}
+	}
+
+	.slider-controls{
+		width: 70px;
+        height: 30px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		.control-dot{
+			width: 10px;
+			height: 10px;
+			border:2px transparent;
+			border-radius:50%;
+			background-color: $grey-d;
+			cursor: pointer;
+			&.active{
+				width: 12px;
+				height: 12px;
+				border: none;
+				background-color: $accent;
+				transition: all 0.1s ease;
+			}
+		}
+	}
+}

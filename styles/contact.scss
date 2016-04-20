@@ -1,0 +1,75 @@
+// CONTACT section
+.contact{
+	background:url("../assets/img/contact-bg.jpg") fixed 50% 0;
+	background-size: cover;
+	padding:100px 0;
+	@media screen and (max-width:768px){
+		padding: 60px 0;
+	}
+
+	.contact-maxim{
+		font-family: Ral-R, Helvetica, sans-serif;
+		text-align: center;
+		color: $grey-d;
+	}
+}
+
+#contact-wrapper{
+	display: block;
+	max-width:600px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	.error{
+		font-family: Ral-R;
+		font-size: 0.8em;
+		font-weight: 600;
+		color: rgba(224,93,93, 1);
+		margin-top: 5px;
+	}
+
+	input, textarea{
+		width: 100%;
+		border:1px solid $accent;
+		font-family: Ral-L, Helvetica, sans-serif;
+		font-size: 0.8em;
+		color: #222;
+		padding: 15px 30px;
+		margin-top: 15px;
+	}
+
+	.btn-contact{
+		width: 145px;
+		position: relative;
+		float:right;
+		background-color: $accent;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 600;
+		transition: background-color 0.3s ease, border-radius 0.3s ease;
+		&:hover{
+			background-color: #e05d5d;
+			border-radius:5px;
+			
+		}
+	}
+	
+	#contact-message-output{
+		h2{
+			text-align: center;
+			color: #68b442;
+			font-family: Play-R, Helvetica, sans-serif;
+			font-size: 2em;
+			margin: 0;
+		}
+		p{
+			text-align: center;
+			color: $grey-d;
+			font-family: Dancing, Helvetica, sans-serif;
+			font-size: 2em;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+}

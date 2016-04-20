@@ -1,0 +1,19 @@
+// ABOUT section
+.about{
+	padding: 140px 0 70px;
+	@media screen and (max-width:768px){
+		padding: 60px 0 30px;
+	}
+}
+
+.about-text{
+	display: block;
+	margin: 0 auto;
+	max-width: 780px;
+	font-family: Ral-L, Helvetica, sans-serif;
+	font-size: 0.9em;
+	line-height: 2em;
+	text-align: center;
+	padding: 0 10px;
+	color: $grey-l;
+}

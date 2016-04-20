@@ -1,0 +1,40 @@
+// FOOTER section
+.footer{
+	background-color: #fff;
+
+	.scroll-to-top{
+		display: block;
+		font-size: 2em;
+		margin: 10px auto 0;
+		width: 20px;
+		text-align: center;
+		color: $grey-d;
+
+	}
+
+	.footer-title{
+		font-family: Dancing, Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 1.5em;
+		text-align: center;
+		line-height: 0.8em;
+		margin-top: 10px;
+		span{
+			font-size: 0.8em;
+		}
+	}
+
+	.copyright{
+
+		font-family: Ral-L, Helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 0.8em;
+		text-align: center;
+		color: $grey-l;
+		
+		a{
+			color: $grey-d;
+			text-decoration: none;
+		}
+	}
+}

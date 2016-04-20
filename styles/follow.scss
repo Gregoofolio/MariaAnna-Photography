@@ -1,0 +1,68 @@
+// FOLLOW section
+// @import '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css';
+
+.follow{
+	padding:140px 0;
+  @media screen and (max-width:768px){
+    padding: 60px 0;
+  }
+}
+
+.follow-wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 15px 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  color: $grey-l;
+}
+
+.icon:after {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+}
+
+.icon-effect .icon {
+  background: rgba(208,124,124, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.icon-effect .icon:after {
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 1px rgba(208,124,124, 1);
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scale(.8);
+  opacity: 0;
+}
+
+.no-touch .icon-effect .icon:hover {
+  background: rgba(208,124,124, 1);
+  color: #fff;
+}
+
+.icon-effect .icon:after {
+  transform: scale(1.2);
+}
+
+.no-touch .icon-effect .icon:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
